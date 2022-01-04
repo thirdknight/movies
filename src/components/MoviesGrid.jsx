@@ -3,7 +3,7 @@ import { MovieCard } from "./MovieCard";
 import { get } from "../utils/httpClient";
 import { Spinner } from "./Spinner";
 import styles from "./MovieGrid.module.css";
-import { useQuery } from "../hooks/useQuery";
+// import { useQuery } from "../hooks/useQuery";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { Empty } from "./Empty";
 
