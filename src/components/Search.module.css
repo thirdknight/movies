@@ -8,12 +8,9 @@
 
 .searchButton {
   position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
+  right: 8px;
+  top: 0; 
   height: 100%;
-  border: none;
-  background: none;
 }
 
 .searchInput {

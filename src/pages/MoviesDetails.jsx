@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react/cjs/react.development";
 import { Spinner } from "../components/Spinner";
+import { getMovieImg } from "../utils/getMovieImg";
 import { get } from "../utils/httpClient";
 import styles from "./MovieDetails.module.css";
 
@@ -22,7 +23,7 @@ export function MoviesDetails() {
   if(isLoading) {
     return <Spinner />;
   }
-  const imageUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+  const imageUrl = getMovieImg(movie.poster_path, 500)
   // const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
   return(
     <div className={styles.detailsContainer}>
